@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="text-header">لیست تراکنش ها</h1>
+      <form class="input__box">
+        <input class="input__search" placeholder="جستجو تراکنش ..." value="" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="size-5 input__svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </form>
+    </header>
+
+    <!-- btn -->
+    <div class="cover-btn">
+      <button id="btn" class="btn">بارگزاری تراکنش ها</button>
+    </div>
+
+    <main>
+
+      <!-- transaction -->
+      <div class="transaction">
+        <!-- transaction-header -->
+        <p class="transaction__header text-header">لیست تراکنش های شما</p>
+
+        <!-- transaction-table -->
+
+        <table class="transaction__header">
+          <tr>
+            <th>ردیف</th>
+            <th>نوع تراکنش</th>
+            <th>
+              <div class="chevron price">
+                <p>مبلغ</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="size-1"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+            </th>
+            <th>شماره پیگیری</th>
+            <th>
+              <div class="chevron date">
+                <p>تاریخ تراکنش</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="size-1"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+            </th>
+          </tr>
+        </table>
+
+        <table class="transaction__table">
+          <!-- child -->
+
+        </table>
+
+        <!-- loader -->
+        <div class="loading"><div></div></div>
+
+      </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
